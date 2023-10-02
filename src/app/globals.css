@@ -6,3 +6,9 @@ body{
     max-width: 100vw;
     overflow-x: hidden;
   }
+.bg-color{
+  background-color: #09121B;
+}
+.custom-color{
+  color: #09D0CD;
+}
