@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Logo from 'public/logo.png'
 import closeBtn from 'public/close.svg'
 import menu from 'public/menu.svg'
+import styles from './page.module.css'
 
 
 const navigation = [
@@ -41,7 +42,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-color shadow-black shadow-md w-full fixed top-0 left-0 right-0 z-10">
-      <div className='text-white flex items-center justify-between px-16 mx-auto'>
+      <div className='text-white flex items-center justify-between px-12 mx-auto sm:w-auto'>
       <div className='my-5'>
       <Link href="/">
               <Image
@@ -65,7 +66,7 @@ const Navbar = () => {
       </ul>
 
       <Image
-                className="w-[22px] h-[22px] object-contain lg:hidden"
+                className="w-[22px] h-[22px] object-contain md:hidden"
                 src={toggle ? closeBtn : menu}
                 alt="menu"
                 onClick={() => setToggle(!toggle)}
